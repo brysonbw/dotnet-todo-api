@@ -84,7 +84,6 @@ namespace SimpleTodoApi.Repository
 
             if (propertiesModified > 0)
             {
-                Console.WriteLine("prop");
                 try
                 {
                     await _dbContext.SaveChangesAsync();
