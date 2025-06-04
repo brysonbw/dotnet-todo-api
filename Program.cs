@@ -49,6 +49,7 @@ builder.Services.AddOpenApiDocument(options =>
 var conStrBuilder = new SqlConnectionStringBuilder(
        builder.Configuration.GetConnectionString("Default"));
 conStrBuilder.Password = builder.Configuration["DbPassword"];
+conStrBuilder["Server"] = builder.Configuration["DbHost"];
 conStrBuilder["Database"] = builder.Configuration["Database"];
 conStrBuilder["User"] = builder.Configuration["DbUser"];
 

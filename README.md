@@ -25,7 +25,7 @@ dotnet user-secrets init
 `Set Key/Values`
 
 ```bash
-dotnet user-secrets set "DbUser" "<USER_VALUE>" && dotnet user-secrets set "DbPassword" "<PASSWORD_VALUE>" && dotnet user-secrets set "Database" "<DB_NAME_VALUE>"
+dotnet user-secrets set "DbHost" "<DB_HOST_VALUE>" && dotnet user-secrets set "DbUser" "<DB_USER_VALUE>" && dotnet user-secrets set "DbPassword" "<DB_PASSWORD_VALUE>" && dotnet user-secrets set "Database" "<DB_NAME_VALUE>"
 ```
 
 ## Apply db migrations
